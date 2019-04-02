@@ -1,9 +1,9 @@
-class Cat < ActiveRecord::Base
+class CreateCat < ActiveRecord::Base
   def change
     create_table :cats do |t|
 
     t.string :name
-    t.string :age
+    t.integer :age
     t.string :breed
         end
     end
